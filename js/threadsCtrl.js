@@ -1,5 +1,7 @@
 angular.module('rtfmApp')
-.controller('threadsCtrl', function($scope, threadService, $firebaseArray){
+.controller('threadsCtrl', function($scope, threadService, userService, $firebaseArray){
+
+$scope.username = userService.getUser();
 
 // threadService.getThreads();
 // .then(function(threadsRef){

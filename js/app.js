@@ -14,6 +14,16 @@ angular.module('rtfmApp', ['firebase', 'ui.router'])
       url: '/threads/:threadId',
       templateUrl: '/js/views/thread.html',
       controller: 'threadCtrl',
+    })
+    .state('login', {
+      url: '/login',
+      controller: 'loginCtrl',
+      templateUrl: 'js/views/login.html'
+    })
+    .state('Signup', {
+      url: '/signup',
+      controller: 'signupCtrl',
+      templateUrl: 'js/views/signup.html'
     });
     $urlRouterProvider.otherwise('/threads');
 
