@@ -8,6 +8,6 @@ angular.module('rtfmApp')
     return new Firebase(fb.url + '/threads/' + threadId);
   };
   this.getComments = function(threadId){
-    return new Firebase(fb.url + '/threads/', + threadId + '/comments');
+    return new Firebase(fb.url + '/threads/' + threadId + '/comments');
   };
 });
